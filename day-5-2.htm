@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body class="bg-info">
+    <header>
+        <div class="dropdown">
+            <button  class="dropdown-toggle rounded bg-light fw-lighter offset-9  "data-bs-toggle="dropdown"> Products</button>
+            <ul class="dropdown-menu ">
+                
+            
+                 
+                     <li><a class="dropdown-item" href="#">Name</a></li>
+                     <li><a class="dropdown-item" href="#">Detail</a></li>
+                     <li><a class="dropdown-item" href="#">Buy</a></li>
+                     <li><a class="dropdown-item" href="#">Cost</a></li>
+                
+                
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-6  offset-3 mt-5  p-4 shadow bg-light rounded">
+                <h1 class="text-center fw-bold">Form</h1>
+                <form action="">
+                    <div class="">
+                        <label for="fname">Name</label>
+                        <input type="text" class="form-control" name="fname" id="fname">
+
+                    </div>
+                    <div class="">
+                        <label for="p1">Password</label>
+                        <input type="password" class="form-control" name="p1" id="p1">
+                    </div>
+                    <div class="">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" id="email">
+                    </div>
+                    <div class="">
+                        <label for="phone">Phone</label>
+                        <input type="tel" class="form-control" name="phone" id="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="a1">Address</label>
+                        <textarea name="a1" id="a1" class="form-control"></textarea>
+                    </div>
+
+                    <div class="">
+                        <label for="c1">Country</label>
+                        <select name="c1" id="c1" class="form-select">
+                            <option value="India">IND</option><div class="form-group">
+                            <option value="Kolkata">KOL</option><div class="form-group">
+                            <option value="London">LON</option><div class="form-group">
+                            <option value="United State of America">USA</option><div class="form-group">
+                                
+                        </select>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(stax-hero-03-1536x1024.jpg);
+            height: 110vh;
+            max-width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+
+        }
+
+        @media screen and (max-width:600px) {
+            body {
+                background-image: url(stax-hero-03-1536x1024.jpg);
+                height: 130vh;
+                max-width: 100%;
+            }
+
+        }
+
+        @media screen and (min-width:601px) and (max-width:1024px) {
+            body {
+                background-image: url(stax-hero-03-1536x1024.jpg);
+                height: 120vh;
+                max-width: 100%;
+            }
+
+        }
+
+        .nav-item a {
+            position: relative;
+            text-decoration: none;
+            font-weight: bold;
+            color: aliceblue;
+        }
+
+        .nav-item a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 0;
+            color: rgb(243, 245, 245) !important;
+            transition: width 1s ease;
+        }
+
+        .nav-item a:hover::after {
+            width: 100%;
+        }
+
+        .dropdown-toggle::after {
+            display: none;
+        }
+
+
+
+
+        .card {
+            border-radius: 10px;
+        }
+
+        @keyframes slideInRight {
+            0% {
+
+                opacity: 0;
+                transform: translateX(100%);
+            }
+
+            100% {
+
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .slide-in {
+
+            animation: slideInRight 0.5s ease-out forwards;
+        }
+
+        /* Hide Bootstrap's built-in dropdown arrow without breaking layout */
+        .custom-toggle::after {
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: none;
+            margin: 0;
+        }
+
+        /* Underline animation on the span */
+        .link-text {
+            position: relative;
+            display: inline-block;
+        }
+
+        .link-text::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 0;
+            background-color: white;
+            transition: width 0.4s ease;
+        }
+
+        /* Hover on nav-link (a) triggers the underline */
+        .nav-link:hover .link-text::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div class="container-fluid d-md-none ">
+
+
+        <div class=" row  ">
+
+
+            <div class=" navbar col-4 d-flex align-items-center text-white ">
+
+                <span class="fw-bolder  " style="font-size: 3.5rem; "> <a href=""
+                        class="text-white text-decoration-none">STAX</a></span>
+
+            </div>
+
+
+            <div class=" col-8 d-flex align-items-center justify-content-end  gap-5 ">
+
+                <i><a href="" class="bi bi-cart text-white"></a></i>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle custom-toggle" href="#" data-bs-toggle="dropdown">
+                        <span class="link-text">Templates</span>
+                        <i class="fa fa-chevron-down ms-1"></i>
+                    </a>
+                </li>
+                <i><a href="" class="bi bi-list text-white" style="font-size: 3rem;"></a></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid d-none d-md-block navbar navbar-expand-md ">
+
+        <div class="row">
+
+            <div class=" col-3 d-flex align-items-center   ">
+
+                <span class="fw-bolder ms-lg-4 " style="font-size: 3.5rem; "><a href=""
+                        class="text-white text-decoration-none">STAX</a></span>
+
+            </div>
+
+            <div class=" col-9 d-flex flex-wrap align-items-center  justify-content-between  ">
+
+                <ul class="  mt-4 list-unstyled text-capitalize d-flex flex-wrap    gap-5  w-100 justify-content-end">
+
+                    <li class="nav-item "><a href=""> home</a></li>
+                    <li class="nav-item "><a href="">about</a></li>
+                    <li class="nav-item "><a href="" class="  dropdown dropdown-toggle" data-bs-toggle="dropdown">
+                            blocks</a></li>
+                    <li class="nav-item "><a href="">patterns</a></li>
+                    <li class="nav-item "><a href="" class="dropdown-toggle" data-bs-toggle="dropdown"> <span
+                                class="link-text">templates</span><i class="fa fa-chevron-down ms-1"
+                                style="font-size:x-small;"></i></a>
+                    </li>
+                    <li class="nav-item "><a href="" class="dropdown-toggle" data-bs-toggle="dropdown"> shop</a></li>
+                    <li class="nav-item "><a href=""> Contact</a></li>
+                    <li class="nav-item "><a href="" class="  "> BUY STAX</a></li>
+                    <i><a href="" class="bi bi-cart "></a></i>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="container-fluid col-xl-6 ms-xl-4  text-white mb-5" style="margin-top: 150px;">
+        <h1 class="fw-bold display-1">The Future</h1>
+        <h2 class="fw-bold display-4">of WordPress Is Here.</h2>
+        <p class="fs-4 mt-3 mb-4">STAX is a WordPress block theme for the Full Site Editor. Meaning,
+            you can change everything about this theme — directly in the editor.
+            Goodbye clunky page-builder plugins. Hello STAX.</p>
+        <button class="btn btn-success px-5 py-2">GET STARTED</button>
+    </div>
+
+    <div class="container-fluid   mt-5" style="margin: top 100px;">
+
+        <div class="row">
+
+            <div class="col-12 col-md-6 col-lg-4 ">
+                <div class="card pb-5 mb-3 border-2">
+                    <i class="bi bi-box mx-auto mt-4 fs-1 text-success"></i>
+                    <strong class="mx-auto fw-bolder" style="color:black;">
+                        <h1>Blocks</h1>
+                    </strong>
+                    <p class="text-center text-secondary mt-1 fs-5 p-4">The <strong>Organic Blocks</strong> plugin
+                        includes <strong>20 premium blocks</strong> for creating amazing content. Each block is
+                        showcased in <strong>STAX</strong>.</p>
+                    <a href="" class="text-decoration-none mx-auto  "><strong
+                            class="text-uppercase border border-secondary border-2 p-2 px-5 text-secondary overflow-hidden ">view
+                            blocks</strong></a>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card pb-5 mb-3 border-2">
+                    <i class="bi bi-grid-3x3-gap mx-auto mt-4 fs-1 text-success"></i>
+                    <strong class="mx-auto fw-bolder" style="color:black;">
+                        <h1>Patterns</h1>
+                    </strong>
+                    <p class="text-center text-secondary mt-1 fs-5 p-4">The <strong>Organic Blocks</strong> plugin
+                        includes <strong>20 premium blocks</strong> for creating amazing content. Each block is
+                        showcased in <strong>STAX</strong>.</p>
+                    <a href="" class="text-decoration-none mx-auto "><strong
+                            class="text-uppercase border px-5 border-secondary border-2 p-2  text-secondary overflow-hidden ">view
+                            patterns</strong></a>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
+                <div class="card pb-5 border-2">
+                    <i class="bi bi-layout-wtf mx-auto mt-4 fs-1 text-success"></i>
+                    <strong class="mx-auto fw-bolder" style="color:black;">
+                        <h1>Templates</h1>
+                    </strong>
+                    <p class="text-center text-secondary mt-1 fs-5 p-4">The <strong>Organic Blocks</strong> plugin
+                        includes <strong>20 premium blocks</strong> for creating amazing content. Each block is
+                        showcased in <strong>STAX</strong>.</p>
+                    <a href="" class="text-decoration-none mx-auto "><strong
+                            class="text-uppercase px-5 border border-secondary border-2 p-2  text-secondary overflow-hidden ">view
+                            template</strong></a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid   p-5 mb-5  " style="border-radius: 15px;background-color: cadetblue;"
+            style="background-color: #163049; ">
+            <div class="row w-100">
+                <div class="col-lg-8 col-12 text-white">
+
+                    <p style="font-size: 3rem;" class=" mb-3 "><span class=" fw-bolder">Block Theme</span>
+                        <span>Goodness</span>
+                    </p>
+
+                    <p class=" fs-5"> <b>STAX</b> is a block-based WordPress theme. It’s an entirely new way of building
+                        WordPress themes using blocks. There’s no messing with code. No rigid layouts. You can change
+                        everything — directly in the WordPress editor.</p>
+
+                </div>
+                <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center  ">
+                    <button class="btn btn-outline-light text-uppercase px-5 py-2 text-success">learn more</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fliud">
+
+            <div class="row ">
+
+                <div class="col-lg-6 col-12 mt-5 shadow rounded-3 mb-sm-5">
+                    <img src="stax-screenshot-02-980x534.jpg" alt="" style="height: auto; max-width: 100%;">
+                </div>
+
+                <div class="col-lg-6 col-12 mt-5 p-5 slide-in">
+                    <span class="text-secondary   text-uppercase mt-5 fs-5"><b>s t a x </b> &nbsp; f e a t u r e
+                        s</span>
+                    <p class=" " style="font-size: 4rem;"><span class="fw-bolder">Full-Site</span> <span>Editing</span>
+                    </p>
+                    <p class="text-secondary fs-5 ">WordPress <b>Full-Site Editing</b> is a new feature that allows
+                        users to edit their entire website from within the WordPress block editor. This feature provides
+                        a more intuitive and user-friendly way to design and layout your website, allowing you to create
+                        and edit pages, posts, and templates all in one place. With Full-Site Editing, it’s now easier
+                        than ever to create a website</p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div class="container-fliud mt-5 ">
+
+            <div class="row  " style="background-color: aliceblue;">
+
+                <div class="col-lg-6 col-12 px-5   slide-in">
+                    <span style="font-size: 70px;" class="fw-bolder">Totally </span>
+                    <p style="font-size: 70px; margin-top:  -30px;" class="">Customizable</p>
+                    <p class="text-dark fs-2">WordPress just got so much easier with <b>STAX.</b></p>
+                    <p class="text-secondary fs-5">The WordPress Full-Site Editor provides you with complete control
+                        over your entire website design. Change global fonts and colors. Customize your header and
+                        footer. Modify page templates and layouts. Implement block patterns. The possibilities are truly
+                        endless</p>
+
+                </div>
+
+                <div class="col-lg-6 col-12   rounded-3 me-n">
+                    <img src="callout-01-768x512.jpg" alt="" style="height: 90vh;width: 100%;">
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="container mt-5">
+
+
+
+
+            <div style="font-size: 3.5rem;" class="text-center"><span>Get </span><span class="fw-bold">Stacking</span>
+            </div>
+            <p class=" text-center text-secondary mt-3" style="font-size: 20px;">The <b> Organic Blocks</b> plugin is an
+                essential addition for any website looking to enhance its design capabilities. With its collection of 20
+                custom blocks, it provides the flexibility to create a beautiful website that stands out from the rest.
+            </p>
+
+
+
+        </div>
+        <div class="container-fliud">
+
+            <div class="row d-flex ">
+
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+                        <i class=" bi bi-images text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">Content slideshow</b>
+                        <p class=" container text-center text-secondary mt-3">Display posts types within a customizable
+                            slideshow.</p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+                        <i class=" bi bi-journal-text text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">posts</b>
+                        <p class=" container text-center text-secondary mt-3">Display post types in a custom blog
+                            layout.</p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+                        <i class=" bi bi-columns-gap text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">portofolio</b>
+                        <p class=" container text-center text-secondary mt-3">Display a collection of posts in a
+                            portfolio.
+
+                        </p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+                        <i class=" bi bi-person-circle text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">profile</b>
+                        <p class=" container text-center text-secondary mt-3">Showcase personal profiles with social
+                            media links..</p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+                        <i class=" bi bi-chat-left-quote text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">testimonials</b>
+                        <p class=" container text-center text-secondary mt-3">Client testimonials in a customizable
+                            slideshow.
+
+                        </p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+                        <i class=" bi bi-arrows-expand text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">max width</b>
+                        <p class=" container text-center text-secondary mt-3">Define a custom width for your content.
+                        </p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+                        <i class=" bi bi-window text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">header</b>
+                        <p class=" container text-center text-secondary mt-3">Create custom headers for your website.
+                        </p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+                        <i class=" bi bi-layout-three-columns text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">footer</b>
+                        <p class=" container text-center text-secondary mt-3">Create custom footers for your website.
+                        </p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+                        <i class=" bi bi-bell-fill text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">widget area</b>
+                        <p class=" container text-center text-secondary mt-3">Add classic widgets in the block editor.
+                        </p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+                        <i class=" bi bi-toggle2-on text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">alert</b>
+                        <p class=" container text-center text-secondary mt-3">Notify visitors of important information.
+                        </p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+                        <i class=" bi bi-box-arrow-in-up-right text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">toggle</b>
+                        <p class=" container text-center text-secondary mt-3">Toggle the display of website content.
+                        </p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+                        <i class=" bi bi-gem text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">model</b>
+                        <p class=" container text-center text-secondary mt-3">Display content within a popup window.</p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+                        <i class=" bi bi-easel text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">icon box</b>
+                        <p class=" container text-center text-secondary mt-3">Display content with an icon — like this!
+                        </p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+                        <i class=" bi bi-megaphone text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">hero</b>
+                        <p class=" container text-center text-secondary mt-3">A featured banner with background media.
+                        </p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+                        <i class=" bi bi-link-45deg text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">call</b>
+                        <p class=" container text-center text-secondary mt-3">Add emphasis to your content to capture
+                            attention.</p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+                        <i class=" bi bi-clipboard-check text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">link container</b>
+                        <p class=" container text-center text-secondary mt-3">Make any group of content a clickable
+                            link.</p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+                        <i class=" bi bi-star text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">copy to clipboard</b>
+                        <p class=" container text-center text-secondary mt-3">Click to copy any content to the
+                            clipboard.</p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+                        <i class=" bi bi-table text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">featured content</b>
+                        <p class=" container text-center text-secondary mt-3">Display content in a customizable
+                            container.</p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+
+                        <i class=" bi bi-arrows-move text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">pricing table</b>
+                        <p class=" container text-center text-secondary mt-3">Create beautiful custom pricing tables.
+                        </p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mt-3">
+                    <div class="card   border-2 d-flex  ">
+                        <i class=" bi bi-box text-success mx-auto fs-1 "></i>
+                        <b class="text-center text-uppercase mt-3">position</b>
+                        <p class=" container text-center text-secondary mt-3">Adjust vertical and horizontal positions.
+                        </p>
+                        <button class="btn btn-secondary  mb-4 fw-bold w-auto mx-lg-5 mx-sm-4">View example</button>
+
+
+                    </div>
+                </div>
+                <div class="col-6 d-flex justify-content-end mt-5 ">
+                    <button class="btn btn-success  text-capitalize px-5 ">get organic blocks</button>
+                </div>
+                <div class="col-6 mt-5">
+                    <button
+                        class="btn btn-outline-light  border border-2 border-dark text-secondary text-capitalize px-5 ">view
+                        core blocks</button>
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

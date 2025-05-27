@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+   
+  name= window.prompt("What's your name:")
+  dob= window.prompt('Enter your DOB:')// get input from the user......
+  a= Date.parse(dob)  //convert input into miiliseconds...
+  b=Math.floor((Date.now()-a)/86400000)// substract the date in milliseconds and divide by 86400000 to get convert milli sec into days...
+  c=Math.floor(b/365)//convert days into yearss....
+  console.log(name,'your age is approximately ', c)
+    
+
+    </script>
+</body>
+</html>

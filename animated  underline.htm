@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Underline</title>
+  <style>
+    a {
+      position: relative;
+      text-decoration: none;
+      color: #000;
+      font-size: 24px;
+    }
+
+    a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0%;
+      height: 2px;
+      background-color: #007bff;
+      transition: width 1s ; /* Adjust duration here */
+    }
+
+    a:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#">Hover Me</a>
+
+</body>
+</html>

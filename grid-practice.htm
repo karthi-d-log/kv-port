@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @media  only screen and (max-width:600px) 
+        {
+            .divcontainer{
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-areas:'head'
+                                    'nav'
+                                    'main'
+                                    'roght'
+                                    'foot';
+                gap: 10px;
+                padding : 10px;
+                
+            }
+            
+        }
+      
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .divcontainer{
+            display: grid;
+            grid-template-columns: 150px auto 220px;
+            grid-template-areas: 'head head head'
+                                  'nav main roght'
+                                  'foot foot foot';
+            gap: 10px;
+            padding: 10px;
+        }
+        .head{
+            display: grid;
+            background-color: cyan;
+            padding: 10px;
+            text-align: center;
+            grid-area: head;
+        }
+        .nav{
+           
+            grid-area: nav;
+            text-align: center;
+            gap: 10px;
+            
+        }
+        .nav ul li{
+            list-style: none;
+            padding: 10px;
+            background-color: aqua;
+            margin-bottom: 7px;
+           
+            
+        }
+
+        .main{
+             grid-area: main;
+             text-align: center;
+        }
+        .right{
+            grid-area: roght;
+           
+            
+        }
+        .roght ul li{
+            padding-bottom: 10px;
+        }
+        .foot{
+            grid-area: foot;
+            background-color: dodgerblue;
+            text-align: center;
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="divcontainer">
+        <div class="head"><h1>Karthik Website</h1></div>
+        <div class="nav">
+            <ul>
+                <li> PC</li>
+                <li> CPU</li>
+                <li> Keyboard</li>
+                <li> Mouse</li>
+            </ul>
+        </div>
+        <div  class="main">
+            <p>
+                A computer is a modernized machine that has made our daily activities easy and simple. It has made documenting an easy task. In the recent past, Computers and their importance have widely grown and diversified. It is now a necessary component in every field of the industry.
+                A computer is a modernized machine that has made our daily activities easy and simple. It has made documenting an easy task. In the recent past, Computers and their importance have widely grown and diversified. It is now a necessary component in every field of the industry.
+                A computer is a modernized machine that has made our daily activities easy and simple. It has made documenting an easy task. In the recent past, Computers and their importance have widely grown and diversified. It is now a necessary component in every field of the industry.
+                A computer is a modernized machine that has made our daily activities easy and simple. It has made documenting an easy task. In the recent past, Computers and their importance have widely grown and diversified. It is now a necessary component in every field of the industry.
+                A computer is a modernized machine that has made our daily activities easy and simple. It has made documenting an easy task. In the recent past, Computers and their importance have widely grown and diversified. It is now a necessary component in every field of the industry.
+            </p>
+        </div>
+        <div class="roght">
+            <ul>
+                <li>A computer is a modernized machine that has made our </li>
+                <li>A computer is a modernized machine that has made our </li>
+                <li>A computer is a modernized machine that has made our </li>
+    
+    
+            </ul>
+        </div>
+        <div class="foot">
+            <h4>THE END</h4>
+        </div>
+    </div>
+</body>
+</html>

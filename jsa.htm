@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>
+    <style>
+
+        .ho{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="hi" class="ho " >🎁</p>
+    <button onclick="call()" id="bt">Hit Mee!</button>
+
+    <script>
+        a=document.getElementById('hi')
+        b=document.getElementById('bt')
+        function call() {
+            a.classList.toggle('ho')
+            if (a.classList.contains('ho')) {
+                b.textContent='Hit Mee...!'
+                
+            } else {
+
+                b.textContent='Close This...!'
+            }
+        
+           
+
+            
+        }
+
+
+        // list=['Milk','Bread','Apples']
+        //    console.log(list);
+        //    a= list.indexOf('Apples');
+        //    list[a]='Banana'
+        //    console.log(a);
+        //    console.log(list.lastIndexOf('Banana'));
+        //    b=list.splice(2,0,'Lemon','Orange','Grapes');
+        //    console.log(list);
+        //       console.log(list);
+
+
+        // a=[8,5,8,9,2,1,5,5]
+        // document.write(a.sort((a,b)=>b+a) );
+        // document.write(list.sort())
+
+
+        //    Creating an empty array
+        //     a=[]
+
+        //    function list() {
+        //      //    Adding elements to the array
+        //      a.push('milk','bread','apple')
+        //     console.log(a);
+
+        //     //   Adding elements to the array at specific index
+        //     a.splice(1,1,'banana','eggs')
+        //     console.log(a);
+
+        //     //Rremoving the last element of the array
+        //     a.pop()
+        //     console.log(a);
+
+        //     // Alphetic sorting of the array
+        //     console.log(a.sort());
+
+        //     // to find the  index of the milk in the array
+        //     console.log(a.indexOf('milk'));
+
+        //     // Again adding some elements t the  array  
+        //     a.splice(1,0,'carrot','lettuce')
+        //     console.log(a);
+
+
+        //     // Creating new list 
+        //     b=['juice','pop']
+        //     console.log(b);
+
+        //     // Adding the new list twice to the existing list 
+        //     a=a.concat(b,b);
+        //     console.log(a);
+
+        //     // Finding the index of the existing last element in the array
+        //     c=a.lastIndexOf('pop')
+        //     console.log(c);
+
+        //     // Reversing the array
+        //     a.reverse()
+        //    }
+        //    list() 
+        //     console.log(a);
+
+
+        // Multidimensional Array 
+
+
+
+
+        //   a1={
+        //     student1:{
+        //         name:'Ramkumar',
+        //         age:20,
+        //         marks:[90,80,70]
+        //     },
+        //     student2:{
+        //         name:'Jaga',
+        //         age:49,
+        //         marks:[90,80,70]
+        //     },
+        //     student3:{
+        //         name:'Mani',
+        //         age:21,
+        //         marks:[90,80,70]
+        //     },
+        //     student4:{
+        //         name:'Parthi',
+        //         age:41,
+        //         marks:[90,80,70]
+        //     },
+        //     student5:{
+        //         name:'Venktatsai',
+        //         age:1,
+        //         marks:[90,80,70]
+        //     }
+        //   }
+
+        //     console.log(a1.student2);
+
+
+
+
+
+
+
+        // // console.log(len);
+
+
+
+
+
+
+
+
+
+
+
+
+        // nos=window.prompt("Enter the number of students:")
+        // i=0
+        // while (nos>i) {
+
+        //    std=['Name',"Register Number",'Tamil Mark','English Mark','Maths Mark','Science Mark',"Social Science Mark"]
+        //    len=std.length
+        //    ml=[]
+        //    i++
+
+
+
+
+        //   function rdata() {
+
+        //     i1=0
+        //     while (i1<len) {
+        //        marks = window.prompt(`Enter student  ${std[i1]} :`)
+        //        ml.push(marks)
+        //        i1++
+        //       }
+
+        //  }
+
+
+
+
+
+        //    function odata () {
+
+        //     i2=0
+        //     while (i2<len) {
+
+        //        console.log(`${std[i2]} : ${ml[i2]}`);
+
+
+
+        //        i2++
+
+
+        //     }
+
+
+        //   }
+
+
+
+        //  rdata()
+        //  odata()
+
+
+        // }
+
+
+
+        // name='Karthikeyan';
+        // len=name.length
+        // alert(len)
+
+
+        // i=0
+        // while (i<len) {
+
+
+        //     i1=0
+        //     while (i1<=i) {
+        //         document.write(name.at(i1))
+
+
+        //         i1++
+
+        //     }
+        //     document.write('<br>')
+        //     i++
+
+
+        // }
+
+
+
+
+        // let rows = window.prompt('How namy rows Do you want:');
+
+        // for (let i = 1; i <= rows; i++) {
+        //     let spaces = '&nbsp;'.repeat(rows - i);  // Non-breaking spaces
+        //     let stars = '*&nbsp;'.repeat(i);         // Star + space
+        //     document.write(spaces + stars + '<br>');
+        // }
+
+
+        //   class Gamescore {
+
+
+        //     constructor(score) {
+        //         this._score=score
+
+
+        //         }
+        //         get score () {
+        //             return `Current Score: ${this._score}`;
+        //         }
+        //         set score(nn){
+        //             if (nn<0) {
+        //                 document.write("Don't Use negative number ","<br>")
+        //             }
+        //            else{
+        //             this._score=nn
+
+        //            }
+
+
+        //     }
+        //   } 
+        //   obj=new Gamescore(50)
+
+        //   obj.score=-70
+        //   document.write(obj.score)
+
+        //                  GET SET PERFORMENCE
+
+        // class Agent {
+        //     constructor(codename) {
+        //         this._codename=codename
+        //     }
+
+        //     get codename(){
+        //         return `Agent: ${this._codename}`
+        //     }
+        //     set codename(cnn){
+        //         if (cnn.length>3) {
+        //             this._codename=cnn
+
+
+        //         } else {
+        //             document.write(" Given String is too short")
+        //         }
+        //     }
+
+
+        // }
+        // obj=new Agent('Karthik')
+        // obj.codename='Sathish'
+        // document.write(obj.codename)
+
+
+
+        // para = document.createElement('p');
+        // para.textContent = 'Yo! i`m a brand new paragraph';
+
+
+        // setTimeout(() => {
+
+        //     para.textContent = 'Update Alert! This Text has been changed';
+        //     para.style.color = 'white';
+        //     para.style.fontWeight = 'bold';
+        //     para.style.fontSize = '20px';
+        //     para.style.padding = '10px';
+        //     para.style.borderRadius = '10px';
+        //     para.style.backgroundColor = 'darkslateblue';
+
+        // }, 3000);
+        // document.body.append(para)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // let total= prompt('Enter your mark:')
+
+        // if (total>=90) {
+
+        //     console.log('You are A grade');
+
+
+        // } 
+        // else if (total>=75) {
+
+        //        console.log('You are A grade');
+
+
+        // }
+        // else {
+        //     console.log('You are C grade');
+
+        // }
+
+        // switch (new Date().getDate()) {
+        //     case 0:
+        //         day='Sunday'
+        //         break;
+        //     case 1:
+        //         day='Monday'
+        //         break;
+        //     case 2:
+        //         day='Tuesday'
+        //         break;
+        //     case 3:
+        //         day='Wednesday'
+        //         break;
+        //     case 4:
+        //         day='Thursday'
+        //         break;
+        //     case 5:
+        //         day='Friday'
+        //         break;
+        //     case 6:
+        //         day='Saturday'
+        //         break;    
+
+        //     default:
+
+        // }
+
+        // console.log(day);
+
+        // console.log(new Date().getDate());
+        // console.log(new Date().getDay()+1);
+        // console.log(new Date().getFullYear());
+        // console.log(new Date().getMonth()+1);
+        p1 = document.getElementById('hi').innerHTML;
+        p2 = document.getElementsByClassName('ho')[0].outerHTML;
+        p3 = document.getElementsByTagName('p')[0].innerText;
+        console.log(p3);
+
+        console.log(p2);
+
+        console.log(p1);
+        content = document.getElementById('textbox').innerText;
+        console.log(content);
+    </script>
+
+
+</body>
+
+</html>
