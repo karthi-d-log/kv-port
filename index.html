@@ -52,7 +52,22 @@
     }
 
     .nav-link:hover {
-      color: orangered !important;
+      color: #10376b !important;
+      background-color: rgb(21, 225, 240);
+      opacity: 2;
+      font-weight: bolder;
+      padding: 10px 0px;
+
+
+
+
+    }
+
+    .nav-link {
+      background-color: #10376b;
+      border-radius: 10px;
+      color: aliceblue !important;
+
     }
 
     .hope1 {
@@ -74,27 +89,30 @@
 </head>
 
 <body class="bg-dark ">
+
+
   <!--Adding navbar-->
 
 
-  <nav class="navbar navbar-expand-lg   bg-dark  fixed-top   ">
+  <nav class="d-flex justify-content-center align-items-center navbar navbar-expand-lg   bg-dark  fixed-top   ">
 
-    <div class="row col-12 ">
-      <div class="col-lg-3 d-inline " style="color: orangered;">
-        &lt;<span class="text-white">Home </span>/&gt;
-      </div>
-      <div class="d-none d-lg-block col-lg-9">
+    <div class="row ">
+
+      <div class="d-none d-lg-block">
         <ul class="navbar-nav list-unstyled d-flex gap-4 justify-content-end align-items-center">
-          <li><a href="#home" class="text-white nav-link">Home</a></li>
-          <li><a href="#about" class="text-white nav-link">About</a></li>
-          <li><a href="#contact" class="text-white nav-link">Contact</a></li>
-          <li><a href="#skills" class="text-white nav-link">Skills</a></li>
-          <li><a href="#projects" class="text-white nav-link">Projects</a></li>
+          <li><a href="#home" class="text-white nav-link px-3 ">Home</a></li>
+          <li><a href="#about" class="text-white nav-link  px-3 ">About</a></li>
+          <li><a href="#contact" class="text-white nav-link  px-3">Contact</a></li>
+          <li><a href="#skills" class="text-white nav-link  px-3">Skills</a></li>
+          <li><a href="#projects" class="text-white nav-link px-3 ">Projects</a></li>
         </ul>
       </div>
     </div>
 
-  </nav> <!--Page container starts-->
+  </nav> 
+  
+  
+                                    <!--Page container starts-->
 
 
   <div class="container-fluid d-flex justify-content-center align-items-center flex-column ">
@@ -102,34 +120,24 @@
     <!--Adding image-->
 
     <div class="text-white rounded-circle d-flex justify-content-center align-items-center " id="home"> <img
-        src="karthi1.jpg" class="rounded-circle  "
-        style="width: 350px;height: 400px;  margin-top: 70px;" alt=""></div>
+        src="WhatsApp Image 2025-06-21 at 9.31.18 PM.jpeg" class="rounded-circle  " style="width: 300px;height: 300px;  margin-top: 70px;" alt=""></div>
 
     <!--Greetings and self info-->
 
 
     <div class="d-flex justify-content-center mt-5 mb-3">
-      <h1 class=" text-white h fw-bolder ">Hi, I'm Karhikeyan <span class="wave">👋</span></h1>
+      <h1 class=" text-white h fw-bolder ">Hi, I'm Karhikeyan </h1>
 
     </div>
     <h5 class="text-white">Front-end Developer</h5>
     <div class="mb-3 rounded-3 p-3 box-shadow">
-      <p class="text-white text-center mt-3">I am a front-end developer with a passion for creating beautiful and
-        functional web applications. I have experience in HTML, CSS, JavaScript, and various front-end frameworks.
-        I am a passionate front-end developer with a keen eye for design and a love for creating user-friendly
-        interfaces. I enjoy turning complex problems into simple, beautiful, and intuitive designs. Let's work together
-        to bring your ideas to life!
+      <p class="text-white text-center mt-3">Hi, I'm a Front-End Developer with a passion for crafting clean, responsive, and user-focused web experiences. I work with HTML, CSS, JavaScript, Bootstrap, jQuery, and ReactJS to bring ideas to life in the browser. Whether it's building from scratch or improving existing interfaces, I love turning design concepts into functional, interactive websites. I'm always learning, experimenting with new tools, and looking for ways to improve both performance and usability. Let’s build something amazing together!
       </p>
     </div>
     <h5 class="text-white ">My Responsibilty</h5>
     <div class="box-shadow rounded-3 p-3 mb-3">
-      <p class="text-white text-center mt-3">As a front-end developer, I am responsible for the design and
-        implementation of the user interface, ensuring that it is visually appealing, user-friendly, and responsive
-        across different devices. I work closely with designers and back-end developers to create a seamless user
-        experience
-        I am responsible for the design and implementation of the user interface, ensuring that it is visually
-        appealing, user-friendly, and responsive across different devices. I work closely with designers and back-end
-        developers to create a seamless user experience.</p>
+      <p class="text-white text-center mt-3">As a front-end developer, I am responsible for creating responsive and interactive user interfaces using technologies such as HTML, CSS, JavaScript, Bootstrap, jQuery, and ReactJS. I translate design mockups into clean, functional code and ensure that websites look great and perform well across all devices and browsers. My role includes implementing reusable components, enhancing user experience with dynamic features, and optimizing web performance. I also focus on writing maintainable code, debugging issues, and staying updated with the latest front-end development practices and tools.
+      </p>
     </div>
     <div class="d-flex justify-content-center align-items-center gap-3 mt-4 mb-5">
       <button class="  btn  text-white border-0 fw-bold " style="background-color: orangered;">Contact Me</button>
@@ -189,18 +197,11 @@
           <p class="text-white text-center">React.js</p>
         </div>
       </div>
+
       <div class="col-6 col-sm-6  col-md-4 col-lg-4 ">
         <div class="card mb-3 bg-secondary p-3">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-            class="mx-auto alt=" TypeScript" width="100" height="100">
-          <p class="text-white text-center">Typescript</p>
-        </div>
-      </div>
-      <div class="col-6 col-sm-6  col-md-4 col-lg-4 ">
-        <div class="card mb-3 bg-secondary p-3">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" class="mx-auto"
-            alt="Sass" width="100" height="100">
-          <p class="text-white text-center">Sass</p>
+          <img src="icons8-python.gif" class="mx-auto" alt="Sass" width="100" height="100">
+          <p class="text-white text-center">Python</p>
         </div>
       </div>
       <div class="col-6 col-sm-6  col-md-4 col-lg-4 ">
@@ -210,13 +211,7 @@
           <p class="text-white text-center">jQuery</p>
         </div>
       </div>
-      <div class="col-6 col-sm-6  col-md-4 col-lg-4 ">
-        <div class="card mb-3 bg-secondary p-3">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="mx-auto"
-            alt="Figma" width="100" height="100">
-          <p class="text-white text-center">Figma</p>
-        </div>
-      </div>
+
       <div class="col-6 col-sm-6  col-md-4 col-lg-4 ">
         <div class="card mb-3 bg-secondary p-3">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
@@ -224,27 +219,9 @@
           <p class="text-white text-center">Visual Studio</p>
         </div>
       </div>
-      <div class="col-6 col-sm-6  col-md-4 col-lg-4 ">
-        <div class="card mb-3 bg-secondary p-3">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-line.svg" class="mx-auto" alt="Adobe XD"
-            width="100" height="100">
-          <p class="text-white text-center">Adobe XD</p>
-        </div>
-      </div>
-      <div class="col-6 col-sm-6  col-md-4 col-lg-4 ">
-        <div class="card mb-3 bg-secondary p-3">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" class="mx-auto"
-            alt="WordPress" width="100" height="100">
-          <p class="text-white text-center"> WordPress</p>
-        </div>
-      </div>
-      <div class="col-6 col-sm-6  col-md-4 col-lg-4  ">
-        <div class="card mb-3 bg-secondary p-3">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" class="mx-auto"
-            alt="Next.js" width="100" height="100">
-          <p class="text-white text-center">Next.js</p>
-        </div>
-      </div>
+
+
+
 
 
     </div>
@@ -255,204 +232,18 @@
     <!-- End of the Skillset  -->
 
 
-    <!-- Adding Projects -->
-    <h1 id="projects"></h1>
-    <h3 class="text-white mb-4 mt-5 p-3">Projects</h3>
-
-
-
-    <div class="row">
-      <div class=" col-lg-6 mb-3 mt-2">
-        <div class="card bg-secondary p-3 ">
-
-          <div class="d-flex">
-            <img src="p1.png" alt="Logo" style="width: 100px; height: 100px; margin-right: 15px;"
-              class="img-fluid rounded"><span class="text-white fs-4" style="">Cionbarry</span>
-            <p class="text-capitalize mt-5" style="margin-left: -102px;">crypto information and research marketplace</p>
-          </div>
-
-        </div>
-      </div>
-      <div class=" col-lg-6 mb-3 mt-2">
-        <div class="card bg-secondary p-3 ">
-
-          <div class="d-flex">
-            <img src="p1.png" alt="Logo" style="width: 100px; height: 100px; margin-right: 15px;"
-              class="img-fluid rounded"><span class="text-white fs-4" style="">Cionbarry</span>
-            <p class="text-capitalize mt-5" style="margin-left: -102px;">crypto information and research marketplace</p>
-          </div>
-
-        </div>
-      </div>
-
-      <div class=" col-lg-6 mb-3 mt-2">
-        <div class="card bg-secondary p-3 ">
-
-          <div class="d-flex">
-            <img src="p2.png" alt="Logo" style="width: 100px; height: 100px; margin-right: 15px;"
-              class="img-fluid rounded"><span class="text-white fs-4" style="">Cionbarry</span>
-            <p class="text-capitalize mt-5" style="margin-left: -102px;">crypto information and research marketplace</p>
-          </div>
-
-        </div>
-      </div>
-
-      <div class=" col-lg-6 mb-3 mt-2">
-        <div class="card bg-secondary p-3 ">
-
-          <div class="d-flex">
-            <img src="p3.jpg" alt="Logo" style="width: 100px; height: 100px; margin-right: 15px;"
-              class="img-fluid rounded"><span class="text-white fs-4" style="">Cionbarry</span>
-            <p class="text-capitalize mt-5" style="margin-left: -102px;">crypto information and research marketplace</p>
-          </div>
-
-        </div>
-      </div>
-      <div class=" col-lg-6 mb-3 mt-2">
-        <div class="card bg-secondary p-3 ">
-
-          <div class="d-flex">
-            <img src="p4.png" alt="Logo" style="width: 100px; height: 100px; margin-right: 15px;"
-              class="img-fluid rounded"><span class="text-white fs-4" style="">Cionbarry</span>
-            <p class="text-capitalize mt-5" style="margin-left: -102px;">crypto information and research marketplace</p>
-          </div>
-
-        </div>
-      </div>
-      <div class=" col-lg-6 mb-3 mt-2">
-        <div class="card bg-secondary p-3 ">
-
-          <div class="d-flex">
-            <img src="p5.png" alt="Logo" style="width: 100px; height: 100px; margin-right: 15px;"
-              class="img-fluid rounded"><span class="text-white fs-4" style="">Cionbarry</span>
-            <p class="text-capitalize mt-5" style="margin-left: -102px;">crypto information and research marketplace</p>
-          </div>
-
-        </div>
-      </div>
-      <div class=" col-lg-6 mb-3 mt-2">
-        <div class="card bg-secondary p-3 ">
-
-          <div class="d-flex">
-            <img src="p6.png" alt="Logo" style="width: 100px; height: 100px; margin-right: 15px;"
-              class="img-fluid rounded"><span class="text-white fs-4" style="">Cionbarry</span>
-            <p class="text-capitalize mt-5" style="margin-left: -102px;">crypto information and research marketplace</p>
-          </div>
-
-        </div>
-      </div>
-      <div class=" col-lg-6 mb-3 mt-2">
-        <div class="card bg-secondary p-3 ">
-
-          <div class="d-flex">
-            <img src="p7.png" alt="Logo" style="width: 100px; height: 100px; margin-right: 15px;"
-              class="img-fluid rounded"><span class="text-white fs-4" style="">Cionbarry</span>
-            <p class="text-capitalize mt-5" style="margin-left: -102px;">crypto information and research marketplace</p>
-          </div>
-
-        </div>
-      </div>
-      <div class=" col-lg-6 mb-3 mt-2">
-        <div class="card bg-secondary p-3 ">
-
-          <div class="d-flex">
-            <img src="p8.png" alt="Logo" style="width: 100px; height: 100px; margin-right: 15px;"
-              class="img-fluid rounded"><span class="text-white fs-4" style="">Cionbarry</span>
-            <p class="text-capitalize mt-5" style="margin-left: -102px;">crypto information and research marketplace</p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- Project section Ends here -->
-
-
-
-    <!-- Open source project starts here -->
-
-
-
-
-    <h2 class="text-white text-center mt-5">Open Source Projects</h2>
-
-
-    <div class="row ">
-      <div class=" col-lg-6 mb-3 mt-2">
-        <div class="card bg-secondary p-3 ">
-
-          <div class="d-flex">
-            <img src="ops1.png" alt="Logo" style="width: 100px; height: 100px; margin-right: 15px;"
-              class="img-fluid rounded"><span class="text-white fs-4" >Portofolio</span>
-            <p class="text-capitalize mt-5" style="margin-left: -102px;">Portofolio website</p>
-          </div>
-
-        </div>
-      </div>
-
-      <div class=" col-lg-6 mb-3 mt-2">
-        <div class="card bg-secondary p-3 ">
-
-          <div class="d-flex">
-            <img src="ops2.jpg" alt="Logo" style="width: 100px; height: 100px; margin-right: 15px;"
-              class="img-fluid rounded"><span class="text-white fs-4" >Design Agency hii</span>
-            <p class="text-capitalize mt-5" style="margin-left: -102px;">Agency  web landing page</p>
-          </div>
-
-        </div>
-      </div>
-      
-      <div class=" col-lg-6 mb-3 mt-2">
-        <div class="card bg-secondary p-3 ">
-
-          <div class="d-flex">
-            <img src="ops3.png" alt="Logo" style="width: 100px; height: 100px; margin-right: 15px;"
-              class="img-fluid rounded"><span class="text-white fs-4">Todo App</span>
-            <p class="text-capitalize mt-5" style="margin-left: -102px;">Todo</p>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-
-
-    <!-- Open source section ends here -->
+    
 
     <!-- Personal Information starts here -->
 
-    <h1 id="about"></h1><br>
-    <h2 class="text-white text-center mt-4">About Me</h2>
-    <div class="col-lg-12 bg-secondary p-3 mt-3 mb-4 rounded">
-      <p class=" mt-3 text-white ">I am a front-end developer with a passion for creating beautiful and functional web
-        applications. I have experience in HTML, CSS, JavaScript, and various front-end frameworks.
-        I am a front-end developer with a passion for creating beautiful and functional web applications. I have
-        experience in HTML, CSS, JavaScript, and various front-end frameworks.
-        <br>
-        <br>
-        I am a passionate front-end developer with a keen eye for design and a love for creating user-friendly
-        interfaces. I enjoy turning complex problems into simple, beautiful, and intuitive designs. Let's work together
-        to bring your ideas to life!
-        I am a passionate front-end developer with a keen eye for design and a love for creating user-friendly
-        interfaces. I enjoy turning complex problems into simple, beautiful, and intuitive designs. Let's work together
-        to bring your ideas to life!
-        <br>
-        <br>
-        I'm front-end developer with a passion for creating beautiful and functional web applications. I have experience
-        in HTML, CSS, JavaScript, and various front-end frameworks.
-        I am a front-end developer with a passion for creating beautiful and functional web applications. I have
-        experience in HTML, CSS, JavaScript, and various front-end frameworks.
-
-      </p>
-    </div>
+    
 
     <!-- End Of PI -->
     <!-- Contact  Information Strats here-->
 
     <h2 class="text-white text-center mt-4" id="contact">Contact Me</h2>
     <div class="col-lg-12 bg-secondary p-3 mt-3  rounded">
-      <p class=" mt-3 text-white text-center ">I am always open to new opportunities and collaborations. You can find me
-        on my social media platforms or send me an email. <br>
+      <p class=" mt-3 text-white text-center "> I'm always open to new opportunities, collaborations, or just a friendly tech chat! If you’re looking for a front-end developer who is passionate about building clean and responsive web experiences, feel free to reach out. Whether you have a project in mind or just want to connect, I’d love to hear from you <br>
         <br>Email:karthikeyanboff@gmail.com
       </p>
     </div>
@@ -465,8 +256,9 @@
 
   <div class="d-flex justify-content-center align-items-center hope1 gap-5">
     <div class=" hope    bg-dark  ">
-      <a href="#" class="text-white fs-4  "><i class="bi bi-facebook fs-1 p-3 "></i></a>
-      <a href="#" class="text-white  fs-4 "><i class="bi bi-linkedin fs-1  p-3"></i></a>
+      <a href="" class="text-white fs-4  "><i class="bi bi-facebook fs-1 p-3 "></i></a>
+      <a href="https://www.linkedin.com/in/karthikeyan-b-005819325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        class="text-white  fs-4 "><i class="bi bi-linkedin fs-1  p-3"></i></a>
       <a href="#" class="text-white  fs-4  "><i class="bi bi-github fs-1  p-3"></i></a>
 
     </div>
