@@ -77,6 +77,14 @@
       border: 2px solid gray;
       border-radius: 50px;
     }
+
+    #menu {
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border-radius: 10px;
+      padding: 10px;
+    }
   </style>
 </head>
 
@@ -86,7 +94,7 @@
   <!--Adding navbar-->
 
 
-  <nav class=" navbar navbar-expand-md   bg-dark fixed-top ">
+  <nav class=" navbar navbar-expand-md   bg-dark opacity-25 fixed-top ">
 
 
 
@@ -95,13 +103,13 @@
       <button class="navbar-toggler btn border-3 border-light  " data-bs-toggle="collapse" data-bs-target="#menu"><span
           class="bi bi-list text-white fs-2 "></span></button>
 
-      <div class="collapse navbar-collapse justify-content-md-center " id="menu">
-        <ul class="navbar-nav list-unstyled d-flex gap-4  ">
-          <li><a href="#home" class="text-white nav-link px-3 ">Home</a></li>
-          <li><a href="#about" class="text-white nav-link  px-3 ">About</a></li>
-          <li><a href="#contact" class="text-white nav-link  px-3">Contact</a></li>
-          <li><a href="#skills" class="text-white nav-link  px-3">Skills</a></li>
-          <li><a href="#projects" class="text-white nav-link px-3 ">Projects</a></li>
+      <div class="collapse navbar-collapse   justify-content-md-center   " id="menu">
+        <ul class="navbar-nav list-unstyled justify-content-center gap-4 text-center   ">
+          <li class="text-center"><button class="text-white nav-link  px-3 w-25 " data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="location.href='#home'">Home</button></li>
+          <!-- <li class="text-center"><button class="text-white nav-link  px-3  w-25" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="location.href='#about'">About</button></li> -->
+          <li class="text-center"><button class="text-white nav-link  px-3 w-25" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="location.href='#contact'">Contact</button></li>
+          <li class="text-center"><button class="text-white nav-link  px-3 w-25" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="location.href='#skills'">Skills</button></li>
+          <!-- <li class="text-center"><button class="text-white nav-link  px-3 w-25" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="location.href='#projects'">Projects</button ></li> -->
         </ul>
       </div>
     </div>
